@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function(api) {
-  api.use(['deps', 'underscore', 'templating', 'handlebars']);
+  api.use(['deps', 'underscore', 'templating', 'handlebars', 'mongo-livedata']);
   
   if (typeof api.export !== "undefined") {
     api.export(['CollectionFS', 'CFSErrorType']);
